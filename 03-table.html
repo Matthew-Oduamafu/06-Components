@@ -21,12 +21,35 @@
         font-family: "Inter", sans-serif;
         color: #343a40;
         line-height: 1;
+
+        display: flex;
+        justify-content: center;
       }
       table {
         width: 800px;
         margin: 100px auto;
-        background-color: red;
-        padding: 24px;
+        font-size: 18px;
+        /* border: 1px solid #343a40; */
+        border-collapse: collapse;
+
+        margin-top: 100px;
+      }
+      td,
+      th {
+        /* border: 1px solid #343a40; */
+        padding: 16px 24px;
+        text-align: left;
+      }
+      thead th {
+        background-color: #087f5b;
+        color: #fff;
+        width: 25%;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
       }
     </style>
   </head>
@@ -46,6 +69,12 @@
           <td>80 cm</td>
           <td>60 cm</td>
           <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100 cm</td>
+          <td>110 cm</td>
+          <td>90 cm</td>
         </tr>
         <tr>
           <th>Depth</th>
