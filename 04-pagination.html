@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Carousel Component</title>
+    <title>Pagination Component</title>
 
     <style>
       * {
@@ -22,7 +22,132 @@
         color: #343a40;
         line-height: 1;
       }
+      /* .container {
+      } */
+      .pagination {
+        margin: 100px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+      }
+      .btn {
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        cursor: pointer;
+
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+
+        /* display: flex;
+        justify-self: center;
+        align-items: center; */
+      }
+      .btn:hover {
+        background-color: #087f5b;
+        color: #fff;
+      }
+      .btn:hover .btn-icon {
+        stroke: #fff;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+        padding: 2px;
+
+        /* transform: translate(10%, 0); */
+      }
+
+      a:link,
+      a:visited {
+        color: #343a40;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        padding: 6px;
+        background-color: #fff;
+        color: #343a40;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a:hover,
+      a:active {
+        text-decoration: none;
+
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        align-content: center;
+        border-radius: 50%;
+        padding: 6px;
+        background-color: #087f5b;
+        color: #fff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .current-page {
+        background-color: #087f5b !important;
+        color: #fff !important;
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="pagination">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <!-- <div class="page-numbers">
+        
+      </div> -->
+      <a href="#"><span>1</span></a>
+      <a href="#"><span>2</span></a>
+      <a href="#" class="current-page"><span>3</span></a>
+      <a href="#"><span>4</span></a>
+      <a href="#"><span>5</span></a>
+      <a href="#"><span>6</span></a>
+      <span>...</span>
+      <a href="#"><span>23</span></a>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
 </html>
