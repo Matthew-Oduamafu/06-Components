@@ -26,20 +26,49 @@
         display: flex;
         justify-content: space-between;
 
-        background-color: green;
+        padding-top: 32px;
+
+        /* background-color: green; */
       }
       header {
-        background-color: orangered;
+        /* background-color: orangered; */
         height: 100vh;
+
+        position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
       }
 
       .container {
         width: 1200px;
         margin: 0 auto;
       }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+
+        /*IN RELATION TO PARENT SIZE*/
+        left: 50%;
+        top: 50%;
+
+        /* background-color: violet; */
+        /*IN RELATION TO ELEMENT SIZE*/
+        transform: translate(-50%, -50%);
+      }
+      .header-container-inner {
+        width: 50%;
+        /* background-color: blue; */
+      }
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
       p {
         font-size: 20px;
@@ -77,12 +106,15 @@
         <div>NAVIGATION</div>
       </nav>
       <div class="header-container">
-        <h1>A healty meal delivered to your door, every single day</h1>
-        <p>
-          The smart 365-days-per0-year food subscription that will make you eat
-          healty again. Tailored to your personal tastes and nutritional needs
-        </p>
-        <a href="#" class="btn"> Start eating well</a>
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per0-year food subscription that will make you
+            eat healty again. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn"> Start eating well</a>
+        </div>
       </div>
     </header>
     <section>
