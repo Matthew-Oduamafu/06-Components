@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Common Website Components</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .list {
+        list-style: none;
+        font-size: 3.2rem;
+        width: 12.8rem;
+        margin: 9.6rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+      .list li {
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: 700;
+        text-align: center;
+      }
+      .list li a:link,
+      .list li a:visited {
+        text-decoration: none;
+        color: #767676;
+        transition: all 0.3s;
+      }
+      .list li a:hover,
+      .list li a:active {
+        color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list">
+      <li><a href="01-accordion.html">Accodion</a></li>
+      <li><a href="02-carousel.html">Carousel</a></li>
+      <li><a href="03-table.html">Table</a></li>
+      <li><a href="04-pagination-solution.html">Pagination</a></li>
+      <li><a href="05-hero.html">Hero Section</a></li>
+      <li><a href="06-app-layout.html">App Layout</a></li>
+      <li><a href="01-accordion.html">Accodion</a></li>
+    </ul>
+  </body>
+</html>
